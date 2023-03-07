@@ -1,0 +1,12 @@
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTClient.c
+work1\mqttclient.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+work1\mqttclient.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+work1\mqttclient.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTClient.h
+work1\mqttclient.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTExportDeclarations.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTProperties.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTReasonCodes.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTSubscribeOpts.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTClientPersistence.h
+work1\mqttclient.o: ..\Core\paho_mqtt\MQTTPersistence.h
