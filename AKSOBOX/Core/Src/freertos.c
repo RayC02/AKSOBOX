@@ -62,7 +62,7 @@ u8 ct2_minute;
 u8 ct3_hour;
 u8 ct3_minute;
 
-
+char med_AllMessage[300];	//MQTT的上报消息缓存
 
 /* USER CODE END PTD */
 
@@ -228,6 +228,8 @@ void countMedicine(void const * argument)
 						//停止吐药函数
 						//失能吐药按键
 						disableKey();
+						sprintf(med_AllMessage,"{\"medicine\": %d}",medAll);
+						EMQX_Publish(EMQX_PUBLISH_MSG,med_AllMessage);
 						EMQX_Publish(EMQX_PUBLISH_MSG,"{\"WorkState\":1}");
 					}					
 					sprintf(TEXT_Buffer,"%d",medAll);		
